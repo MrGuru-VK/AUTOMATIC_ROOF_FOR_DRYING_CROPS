@@ -1,0 +1,42 @@
+🧩 Components Needed:
+1 × Arduino Uno/Nano
+
+1 × Rain sensor module (with analog or digital output)
+
+1 × L298N motor driver module (or similar H-bridge)
+
+2 × DC motors (to open and close the roof)
+
+1 × LED (optional, for status)
+
+Jumper wires
+
+Power supply (Battery or adapter)
+
+⚙️ Circuit Connections:
+📦 Rain Sensor:
+VCC → Arduino 5V
+
+GND → Arduino GND
+
+DO (digital out) → Arduino pin 7 (rain in your code)
+
+⚡ L298N Motor Driver:
+IN1 → Arduino pin 5 (in1)
+
+IN2 → Arduino pin 6 (in2)
+
+ENA → Connect to 5V or use PWM pin if you want speed control
+
+Motor A terminals → Connect to your motor (or relay system to open/close roof)
+
+GND → Arduino GND
+
+VCC → External power supply (6V–12V for motors)
+
+5V jumper (optional): Only if your L298N needs to power logic from motor power (check module specs)
+
+💡 LED (optional):
+Long leg (anode) → Arduino pin 13 (ledPin)
+
+Short leg (cathode) → 220Ω resistor → Arduino GND
